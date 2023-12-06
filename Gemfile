@@ -23,6 +23,9 @@ gem "jbuilder"
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
+# Schema contracts
+gem "dry-validation"
+
 # Money related stuff
 gem "money-rails", "~> 1.12"
 
@@ -47,4 +50,8 @@ end
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+end
+
+group :test do
+  gem "faker"
 end
